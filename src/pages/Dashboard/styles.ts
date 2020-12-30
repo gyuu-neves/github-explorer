@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { shade } from 'polished';
 
 export const Title = styled.h1`
   font-size: 48px;
@@ -9,18 +10,30 @@ export const Title = styled.h1`
 `;
 
 export const Form = styled.form`
-  margin-top:40px;
-  max-width:714px;
-  display:flex;
-  max-height:72px;
+  margin-top: 40px;
+  max-width: 714px;
+  display: flex;
+  max-height: 70px;
 
   input {
-    flex:1;
+    flex: 1;
+    height: 70px;
+    padding: 0 24px;
+    border: 0;
+    border-radius: 5px 0 0 5px;
   }
 
   button {
-    width:210px;
-    height:72px;
-  }
+    width: 210px;
+    height: 70px;
+    background: #04d361;
+    border-radius: 0px 5px 5px 0px;
+    border: 0;
+    color: #fff;
+    font-weight: bold;
 
+    &:hover {
+      background: ${shade(0.2, '#04D361')};
+    }
+  }
 `;
