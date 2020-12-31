@@ -21,7 +21,29 @@ const Dashboard: React.FC = () => (
           alt="Gyuu August"
         />
         <div>
-          <strong>gyuu-neves/next-learn-starter</strong>
+          <strong>gyuu-neves/next-learn-starter0</strong>
+          <p>gyuu-neves/next-learn-starter</p>
+        </div>
+        <FiChevronRight size={20} />
+      </a>
+      <a href="test">
+        <img
+          src="https://avatars2.githubusercontent.com/u/19414168?s=460&u=1a8bfaa8153d781fbc8c0432b1a95ec7e7e7eba0&v=4"
+          alt="Gyuu August"
+        />
+        <div>
+          <strong>gyuu-neves/next-learn-starter1</strong>
+          <p>gyuu-neves/next-learn-starter</p>
+        </div>
+        <FiChevronRight size={20} />
+      </a>
+      <a href="test">
+        <img
+          src="https://avatars2.githubusercontent.com/u/19414168?s=460&u=1a8bfaa8153d781fbc8c0432b1a95ec7e7e7eba0&v=4"
+          alt="Gyuu August"
+        />
+        <div>
+          <strong>gyuu-neves/next-learn-starter2</strong>
           <p>gyuu-neves/next-learn-starter</p>
         </div>
         <FiChevronRight size={20} />
