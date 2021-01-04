@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { useRouteMatch, Link } from 'react-router-dom';
-import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
-import api from '../../services/api';
+import React, { useEffect, useState } from "react";
+import { useRouteMatch, Link } from "react-router-dom";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import api from "../../services/api";
 
-import logoImg from '../../assets/logo.svg';
+import logoImg from "../../assets/logo.svg";
 
-import { Header, RepositoryInfo, Issues } from './styles';
+import { Header, RepositoryInfo, Issues } from "./styles";
 
 interface RepositoryParams {
   repository: string;
@@ -39,11 +39,11 @@ const Dashboard: React.FC = () => {
   const { params } = useRouteMatch<RepositoryParams>();
 
   useEffect(() => {
-    api.get(`repos/${params.repository}`).then(response => {
+    api.get(`repos/${params.repository}`).then((response) => {
       setRepository(response.data);
     });
 
-    api.get(`repos/${params.repository}/issues`).then(response => {
+    api.get(`repos/${params.repository}/issues`).then((response) => {
       setIssues(response.data);
     });
   }, [params.repository]);
@@ -88,7 +88,7 @@ const Dashboard: React.FC = () => {
       )}
 
       <Issues>
-        {issues.map(issue => (
+        {issues.map((issue) => (
           <a key={issue.id} href={issue.html_url}>
             <div>
               <strong>{issue.title}</strong>
